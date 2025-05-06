@@ -1,5 +1,7 @@
+
 import Image from 'next/image'
 import bgImage from "./images/Bg.png"
+import Form from "@/app/components/Form";
 
 
 const Logo = (props:any) => (<svg width="95" height="78" viewBox="0 0 95 78" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -62,18 +64,14 @@ const FooterImageTextMobile = (props:any) => (<svg width="243" height="256" view
     </svg>
 );
 
-const SubmitButtonIcon = () => (
-    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M10.2546 7C9.84038 7 9.5046 7.33579 9.5046 7.75C9.5046 8.16421 9.84038 8.5 10.2546 8.5H14.9237L7.72393 15.6998C7.42536 15.9983 7.42536 16.4824 7.72393 16.781C8.02251 17.0796 8.50659 17.0796 8.80517 16.781L16.0046 9.58158V14.25C16.0046 14.6642 16.3404 15 16.7546 15C17.1688 15 17.5046 14.6642 17.5046 14.25V7.75C17.5046 7.33579 17.1688 7 16.7546 7L10.2546 7Z"
-            fill="#576DC7"/>
-    </svg>);
 
 const Home = () => {
+
+
     return (
         <div className={'bg-white  flex min-h-svh p-2'}>
             <div style={{flex: " 1 100%", height: "100%"}} className={'relative rounded-4xl overflow-hidden relative'}>
-                <Image src={bgImage} alt={''} fill={true} style={{objectFit: "cover"}} />
+                <Image src={bgImage} alt={''} fill={true} style={{objectFit: "cover"}}/>
                 <div
                     className={"grid  items-center  sm:px-6 px-3 justify-items-center font-[family-name:var(--font-pelangi)] relative "}
                     style={{minHeight: "calc(100vh - 1rem)", alignContent: "center"}}>
@@ -90,15 +88,7 @@ const Home = () => {
                             recovery,
                             beauty, and longevity.</p>
 
-                        <form className={'mt-20  text-center'}>
-                            <span className={"uppercase font-[family-name:var(--font-pelangi-medium)] sm:text-sm text-xs pb-3 inline-block"}>Sign up to be the first to know when we launch</span>
-                            <div className={'rounded-lg border-[#FFFFFF80] border p-0.5 flex items-center'}>
-                                <input type={"email"} placeholder={'Enter mail'} className={'mx-5 outline-none placeholder:text-white'}/>
-                                <button
-                                    className={"inline-flex m-w-[8rem] gap-1 break-keep items-center sm:py-2 sm:px-6 py-2 px-3 rounded-lg text-[#576DC7] bg-white min-w-32"}
-                                    type={"submit"}>Notify me <SubmitButtonIcon/></button>
-                            </div>
-                        </form>
+                        <Form/>
 
                     </main>
                     <footer
