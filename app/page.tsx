@@ -75,7 +75,7 @@ const Home = () => {
                 <div
                     className={"grid  items-center  sm:px-6 px-3 justify-items-center font-[family-name:var(--font-pelangi)] relative "}
                     style={{minHeight: "calc(100vh - 1rem)", alignContent: "center"}}>
-                    <Logo className={'w-12 sm:w-auto'}/>
+                    <Logo className={'w-12 sm:w-auto sm-mt-12 mt-6'}/>
                     <main
                         className={"flex flex-col mt-16 row-start-2 items-center relative z-10 max-w-[815px]  justify-items-center"}>
 

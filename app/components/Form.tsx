@@ -14,7 +14,7 @@ export default function Form() {
     return <form name="submit-to-google-sheet"
                  // method="POST"
                  // action="https://script.google.com/macros/s/AKfycbz1JCWJ0EOnphar8i56XvMZX8H7F3mQzBkamuTLF3h8lGFVIY6Va_YEE-Bg8zm0K181dA/exec"
-                 className={"mt-20  text-center"}
+                 className={"sm:mt-20 mt-10  text-center"}
               onSubmit={(e) => {
             console.log(e);
             e.preventDefault()
