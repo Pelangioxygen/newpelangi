@@ -10,7 +10,8 @@ const SubmitButtonIcon = () => (
 
 export default function Form() {
     const [state, setState] = React.useState(false);
-    if(state) return <h3 className={'text-5xl my-12'}>Thank you for submission</h3>
+    if(!state) return <h3 className={'text-4xl my-12 leading-normal'}>Thank you!<br/>
+        We&apos;ll be in touch soon.</h3>
     return <form name="submit-to-google-sheet"
                  // method="POST"
                  // action="https://script.google.com/macros/s/AKfycbz1JCWJ0EOnphar8i56XvMZX8H7F3mQzBkamuTLF3h8lGFVIY6Va_YEE-Bg8zm0K181dA/exec"
